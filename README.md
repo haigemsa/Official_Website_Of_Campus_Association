@@ -2,7 +2,7 @@
 校园社团官网，此项目可用于做学校社团，单位等组织对外展示自己的官方网站
 所用框架为Bootstrap，可同时兼容PC和手机端。
 同时带有一个后台系统，其通过Servlet实现了新生报名，接入了支付宝登陆，因为涉及个人支付宝账号，秘钥等信息已经删除了。同时有将数据库转化成excel的功能。
-前端相关图片如下
+前端相关图片如下(域名：www.zqc.pub)
 ![](https://note.youdao.com/yws/public/resource/846eb6cb695cb6e7ff664973add5c906/xmlnote/35F7D68FC1E7418599958B8F2FE923AB/310)
 ![](https://note.youdao.com/yws/public/resource/846eb6cb695cb6e7ff664973add5c906/xmlnote/F5B23369F3E348B292E46C3270ADE79F/312
 )
