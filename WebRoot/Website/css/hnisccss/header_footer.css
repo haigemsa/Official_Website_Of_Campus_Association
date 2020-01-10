@@ -1,0 +1,159 @@
+/*通用样式*/
+body,p,h1,h2,h3,h4,h5,h6,ul,li,dl,dt,dd,pre{
+    margin:0;
+    padding:0;
+    border:none;
+    list-style:none;
+    box-sizing: border-box;
+}
+body{
+    font-family: "microsoft yahei","Helvetica Neue", Helvetica, Arial, sans-serif;
+    font-size: 14px;
+    line-height: 1.42857143;
+    color: #000;
+    min-width: 1200px;
+}
+a{
+    color: #000;
+    text-decoration:none;
+}
+input,button{
+    outline:0;
+}
+img{
+    vertical-align: top;
+    border: 0;
+}
+
+/*通用样式*/
+.lf{
+    float: left;
+}
+.rt{
+    float: right;
+}
+/*header*/
+.active{
+    display: block;
+}
+.container{
+    width: 1200px;
+    margin: 0 auto;
+}
+.container:after{
+    content: '';
+    display: block;
+    clear: both;
+}
+
+.cl_header{height: 142px;}
+.cl_header .header{
+    box-shadow: 0 -5px 10px #e5e3e4 inset;
+}
+.header{
+    position: absolute;
+    top: 20px;
+    left: 0;
+    width: 100%;
+    min-width:1200px;
+    height: 122px;
+    background: #fff ;
+    z-index: 10;
+}
+.header:after{
+    content: "";
+    display: table;
+    clear: both;
+}
+.header .container{
+    position: relative;
+}
+.top{
+    position: absolute;
+    top: -20px;
+    left: 0;
+    right: 0;
+    height: 56px;
+    background: url(../images/top.png) no-repeat center center;
+}
+.top_blue{
+    width:100%;height: 20px;
+    margin-top:-20px;
+    background: #0054a4;
+}
+.search{
+    position: absolute;
+    top: 0;
+    right: 0;
+    height: 56px;
+    line-height: 56px;
+    z-index: 20;
+}
+.search form{
+    float: left;
+    height: 50px;
+    line-height: 50px;
+    margin-right: 10px;
+}
+.search input[type='text']{
+    width: 190px;
+    height: 30px;
+    line-height: 30px;
+    color: #fff;
+    font-family:'georgia';
+    padding-right: 40px;
+    border: none;
+    border-bottom: 1px solid #99bada;
+    background: transparent;
+}
+.search input[type='image']{
+    position: relative;
+    right: 25px;
+}
+:-moz-placeholder { /* Mozilla Firefox 4 to 18 */
+    color: #fff;
+}
+
+::-moz-placeholder { /* Mozilla Firefox 19+ */
+    color: #fff;
+}
+
+input:-ms-input-placeholder{
+    color: #fff;
+}
+input::-webkit-input-placeholder{
+    color: #fff;
+}
+.search a,.search span{
+    color: #fff;
+}
+.search span{
+    margin: 0 10px;
+}
+.container .search a:hover{
+	color:#fff;
+    text-decoration: underline;
+}
+.header img{
+    margin-top: 20px;
+}
+/*����*/
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

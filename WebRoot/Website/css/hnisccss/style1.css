@@ -1,0 +1,342 @@
+/*CSS样式重写*/
+body,p,h1,h2,h3,h4,h5,h6,ul,li,dl,dt,dd,pre{
+    margin:0;
+    padding:0;
+    border:none;
+    list-style:none;
+    box-sizing: border-box;
+}
+body{
+    font-family: "microsoft yahei","Helvetica Neue", Helvetica, Arial, sans-serif;
+    font-size: 14px;
+    line-height: 1.42857143;
+    color: #000;
+    min-width: 1200px;
+}
+a{
+    color: #000;
+    text-decoration:none;
+}
+a:hover{color:#0d57a7;}
+input,button{
+    outline:0;
+}
+img{
+    vertical-align: top;
+    border: 0;
+}
+
+/*通用样式*/
+.lf{
+    float: left;
+}
+.rt{
+    float: right;
+}
+
+/*头部*/
+
+
+/*首页*/
+.section{
+    width: 100%;
+    min-height: 500px;
+    padding-top: 20px;
+}
+.section .container{
+    padding-bottom: 20px;
+}
+.section .aside{
+    width: 298px;
+    height: 445px;
+    background: #fff;
+    padding: 15px;
+}
+.section .middle{
+    width: 574px;
+    height: 445px;
+    margin: 0 15px;
+    padding: 15px;
+    background: #fff;
+    overflow: hidden;
+}
+
+.section .title{
+    font-size: 18px;
+    font-family: '宋体';
+    padding-bottom: 10px;
+}
+.section .title p span{
+    display: inline-block;
+    color: #fff;
+    font-size: 20px;
+    font-weight: 600;
+    padding: 0 8px;
+    background: #D1131C;
+}
+.section .title h3{
+    margin-top: 8px;
+    background: url(../images/title-bg.png) repeat-x 100px 10px;
+}
+.section .title h3 a{
+    color: #0553A4;
+    padding-right: 30px;
+    background: #fff;
+}
+
+.section .title a.rt{
+    float: right;
+    font-size: 14px;
+    font-family: Georgia;
+    margin-top: 10px;
+}
+.section .title a.rt:after{
+    content: '+';
+    color: #D2121D;
+    font-size: 16px;
+    font-weight: bold;
+    margin-left: 5px;
+}
+.section .title a.rt:hover{
+    text-decoration: none;
+}
+
+/*轮播广告*/
+.slideBox{
+    width:100%;
+    height:687px;
+    overflow:hidden;
+    position:relative;
+    text-align: center;
+}
+.slideBox .hd{
+    position:absolute;
+    width: 100%;
+    bottom:10px;
+    z-index:1;
+}
+.slideBox .hd ul{
+    width: 100%;
+    text-align: center;
+}
+.slideBox .hd ul li{
+    margin:0 5px;
+    width:12px;
+    height:12px;
+    background:#fff;
+    cursor:pointer;
+    display: inline-block;
+    border-radius: 50%;
+}
+.slideBox .hd ul li.on{
+    background:#E50112;
+}
+.slideBox .bd li{
+    width:100%;
+    min-width:1200px;
+    zoom:1;
+    vertical-align:middle;
+}
+.slideBox .bd{
+   width:1920px; /*图片宽度*/
+   position:absolute;
+   left:50%;
+   margin-left:-960px; /*图片宽度的一半*/
+}
+.slideBox .bd img{
+    width:100%;
+    min-width:1200px;
+    display:inline-block;
+}
+
+/*学院新闻*/
+.news>ul{
+    float: left;
+    width: 44%;
+    margin-top: 30px;
+}
+.news .nums{
+    font-family: 'microsoft yahei';
+}
+.news>ul li{
+    border-bottom: 1px dotted #B5B5B5;
+    padding-bottom: 15px;
+    margin-bottom: 15px;
+}
+.news>ul li p{
+    padding-left: 24px;
+    position: relative;
+    font-size: 18px;
+    white-space: nowrap;
+    text-overflow: ellipsis;
+    overflow: hidden;
+}
+.news>ul li p:before{
+    position: absolute;
+    top: 3px;
+    left: 0;
+    content: '';
+    display: inline-block;
+    width: 14px;
+    height: 14px;
+    background: url(../images/rect.png) no-repeat;
+}
+.news>ul li p:hover:before{
+    background: url(../images/rect-hover.png) no-repeat;
+}
+.news>ul li span{
+    font-family: 'Georgia';
+    padding-left: 24px;
+    color:#868485;
+}
+
+.albumBox{
+    float: right;
+    width:580px;
+    position:relative;
+    text-align: center;
+    margin-top: 30px;
+}
+.albumBox .hd{
+    position:absolute;
+    width: 100%;
+    left: 0;
+    bottom:15px;
+    z-index:1;
+}
+.albumBox .hd ul{
+    text-align: center;
+}
+.albumBox .hd ul li{
+    margin:0 5px;
+    width:12px;
+    height:12px;
+    background:#fff;
+    cursor:pointer;
+    display: inline-block;
+    border-radius: 50%;
+}
+.albumBox .hd ul li.on{
+    background:#B8192B;
+}
+.albumBox .bd li{
+    zoom:1;
+    vertical-align:middle;
+    position: relative;
+    width: 580px;
+    height: 383px;
+    background:#ddd ;
+}
+.albumBox .bd img{
+    display:inline-block;
+    width: 580px;
+    height: 420px;
+}
+
+/*通知公告*/
+.info ul{
+    margin: 30px 0;
+}
+.info ul li{
+    float: left;
+    width: 350px;
+    border-right: 1px solid #B3B3B3;
+    padding: 10px 20px 10px 0;
+    box-sizing: border-box;
+    margin-right: 20px;
+    position: relative;
+}
+
+.info ul li:after{
+    content: '';
+    position: absolute;
+    width: 0;
+    height: 0;
+    top: 50%;
+    right: -12px;
+    margin-top: -6px;
+
+    border-left-color: #B3B3B3;
+}
+.info ul li:last-child:after{
+    display: none;
+}
+.info ul li:hover .date{
+    color: #fff;
+    background: url(../images/date-blue.png) no-repeat;
+}
+.info .date{
+    float: left;
+    text-align: center;
+    width: 83px;
+    height: 83px;
+    color: #0050A2;
+    font-family: 'Georgia';
+    background: url(../images/date-gray.png) no-repeat;
+}
+.info .date h2{
+    font-size: 30px;
+    margin-top: 5px;
+}
+.info ul .rt{
+    width: 90%;
+}
+.info ul .rt span{
+    position: relative;
+    color: #999;
+    padding-left: 26px;
+}
+.info ul .rt span:before{
+    content: '';
+    position: absolute;
+    top: 3px;
+    left: 0;
+    width: 16px;
+    height: 13px;
+    background: url(../images/date.png);
+}
+.info ul .rt h3{
+    font-weight: normal;
+    height: 100px;
+    line-height: 30px;
+    overflow: hidden;
+}
+.info ul .rt p{
+    font-size: 12px;
+    margin: 10px 0;
+    height: 75px;
+    line-height: 25px;
+    color: #808080;
+    overflow: hidden;
+}
+.info ul .rt>a{
+    display: inline-block;
+    padding: 5px 25px 5px 20px;
+    text-decoration: none;
+    border: 1px solid #B3B3B3;
+    margin-top: 20px;
+    position: relative;
+    color:#747474;
+}
+.info ul .rt>a:after{
+    content: '';
+    position: absolute;
+    width: 0;
+    height: 0;
+    top: 10px;
+    right: 5px;
+    border: 5px solid transparent;
+    border-left-color: #2C2C2C;
+}
+.info ul .rt>a:hover{
+    color: #fff;
+    background: #0050A2;
+}
+.info ul .rt>a:hover:after{
+    border-left-color: #fff;
+}
+
+
+
+
+
